@@ -27,3 +27,7 @@ jobs:
       run: npm run test:unit
     - name: Print username
       run: echo "Simona Tafrova"
+    - name: Run the app
+      run: npm run start&
+    - name: Run UI tests
+      run: npm run test:ui

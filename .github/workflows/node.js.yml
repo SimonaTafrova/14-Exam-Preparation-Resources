@@ -33,6 +33,8 @@ jobs:
     needs: build-and-unit-test
     runs-on: ubuntu-latest
     steps:
+      - name: Install node modules
+        run: npm install
       - name: Run the app
         run: npm run start&
       - name: Install playwright
